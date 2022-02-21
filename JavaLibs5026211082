@@ -4,7 +4,7 @@ public class JavaLibs5026211082 {
     public static void main(String[] args){
 
         //1
-        String name= JOptionPane.showInputDialog("Holaa! Dengan siapa ini?");
+        String name= JOptionPane.showInputDialog(null,"Holaa! Dengan siapa ini?","Welcome!",1);
         JOptionPane.showMessageDialog(null,"Hola, " +name+ "! Selamat Datang di Magic Shop!");
 
         //2
@@ -13,7 +13,7 @@ public class JavaLibs5026211082 {
         JOptionPane.showMessageDialog(null,"Asikk, yuk main!");
 
         //move
-        JOptionPane.showMessageDialog(null,"Sebelum itu, aku mau tannya-tanya dulu dong");
+        JOptionPane.showMessageDialog(null,"Sebelum itu, aku mau tanya-tanya dulu dong");
 
         //3
         String umur=JOptionPane.showInputDialog("Kamu saat ini umur berapa?");
