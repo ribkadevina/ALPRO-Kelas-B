@@ -1,0 +1,64 @@
+import javax.swing.*;
+
+public class JavaLibs5026211082 {
+    public static void main(String[] args){
+
+        //1
+        String name= JOptionPane.showInputDialog("Holaa! Dengan siapa ini?");
+        JOptionPane.showMessageDialog(null,"Hola, " +name+ "! Selamat Datang di Magic Shop!");
+
+        //2
+        String[] acceptableValues = {"Mau", "Mau tau dong!", "Kepo nih!"};
+        String main = (String)JOptionPane.showInputDialog(null,"Aku punya sulap. Kamu mau lihat?","Ayo main Sulap",3,null,acceptableValues,acceptableValues[1]);
+        JOptionPane.showMessageDialog(null,"Asikk, yuk main!");
+
+        //move
+        JOptionPane.showMessageDialog(null,"Sebelum itu, aku mau tannya-tanya dulu dong");
+
+        //3
+        String umur=JOptionPane.showInputDialog("Kamu saat ini umur berapa?");
+        int umurConvert=Integer.parseInt(umur);
+        JOptionPane.showMessageDialog(null, "Wah, ternyata kamu sudah " +umur+ " tahun!");
+
+        //4
+        String angka=JOptionPane.showInputDialog("Kalau angka kesukaanmu berapa");
+        double angkaConvert=Double.parseDouble(angka);
+        JOptionPane.showMessageDialog(null,"kamu suka angka "+angka+ "? Wah unik juga.");
+
+        //5
+        String[] rumah = {"Gryffindor","Hufflepuff","RavenClaw","Slytherin"};
+        String asrama = (String)JOptionPane.showInputDialog(null,"Dari empat asrama di Hogwarts ini kamu suka yang mana?","Rumah Sihir",3,null,rumah,rumah[1]);
+        JOptionPane.showMessageDialog(null,"Wiii, ternyata kamu dari " +asrama+ ", keren banget deh!");
+
+        //move2
+        JOptionPane.showMessageDialog(null,"Terima kasih sudah mau menjawab, " +name+ "! Sekarang yuk kita main sulap!");
+
+        //6-7calculatorint
+        String number1 = JOptionPane.showInputDialog("Coba kamu masukin satu bilangan bulat yang ada di pikiranmu");
+        int number11 = Integer.parseInt(number1);
+        String number2 = JOptionPane.showInputDialog("Sekarang, kamu masukin satu bilangan bulat yang kamu suka");
+        int number22 = Integer.parseInt(number2);
+        JOptionPane.showMessageDialog(null,"Nah, sekarang kamu kalikan kedua angka tersebut lalu dibagi dengan 2!");
+        int hasil = (number11 * number22)/2;
+        JOptionPane.showMessageDialog(null,"aku tebak hasilnya adalah "+hasil+"!");
+
+        //8
+        String[] bener = {"Benar!", "Pas banget", "Wih betul keren"};
+        String jawaban = (String)JOptionPane.showInputDialog(null,"Gimana benar kan tebakanku?","Jawaban",3,null,bener,bener[1]);
+        JOptionPane.showMessageDialog(null,"Yey berhasil! Sekarang coba lagi deh");
+
+        //9-10calculatordouble
+        String number3 = JOptionPane.showInputDialog("Sekarang kamu coba masukin deh satu angka desimal apa aja");
+        double number33 = Double.parseDouble(number3);
+        String number4 = JOptionPane.showInputDialog("Terus, kamu masukin deh satu angka desimal kesukaan kamu");
+        double number44 = Double.parseDouble(number4);
+        JOptionPane.showMessageDialog(null,"Oke setelah itu, tambahkan kedua angka tersebut dan kalikan dengan 100!");
+        double result = (number33 + number44)*100;
+        JOptionPane.showMessageDialog(null,"hmmm... aku tebak hasilnya adalah "+result+"!");
+
+        //11
+        String[] akhir = {"Asyik!","Keren banget!","Mau main lagi!"};
+        String akhiran = (String)JOptionPane.showInputDialog(null,"Gimana permainan sulapnya tadi?","Sulap Asik",3,null,akhir,akhir[1]);
+        JOptionPane.showMessageDialog(null,"Nah, terima kasih banyak atas waktunya, "+name+"! Sampai ketemu lain kali yaa");
+    }
+}
