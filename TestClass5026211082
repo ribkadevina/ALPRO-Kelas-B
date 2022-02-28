@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class TestClass5026211082 {
+    public static void main(String[] args){
+        ComputeMethods5026211082 CompMeth = new ComputeMethods5026211082();
+        Scanner insert = new Scanner(System.in);
+
+        //converter fahrenheit to celcius
+        System.out.println("---Fahrenheit to Celcius Converter---");
+        System.out.print("Input a temperature in Fahrenheit: ");
+        double suhufahrenheit = insert.nextDouble();
+        double suhucelcius = CompMeth.fToC(suhufahrenheit);
+        System.out.println("The temperature in Celcius is "+suhucelcius+" degree.");
+
+        //hypotenuse length of a triangle
+        System.out.println("---Pythagorean Triangle Calculator---");
+        System.out.print("Input the length of the triangle's opposite side(cm): ");
+        int sisitegak = insert.nextInt();
+        System.out.print("Input the length of the triangle's adjacent side(cm): ");
+        int sisitidur = insert.nextInt();
+        double sisimiring = CompMeth.hypotenuse(sisitegak,sisitidur);
+        System.out.println("The length of Hypotenuse is "+sisimiring+" cm.");
+
+        //playing dice
+        System.out.println("---Lets Play Dice!---");
+        System.out.println("Roll the dice and see what number do you get!");
+        int angkadadu = CompMeth.roll();
+        System.out.println("The sum of the dice value is "+angkadadu+". Congrats!");
+    }
+}
