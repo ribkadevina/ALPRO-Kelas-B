@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class ProcessAName5026211082 {
+    public static void main(String[] args) {
+        Scanner processname = new Scanner(System.in);
+        System.out.println("---Welcome To Canberra Library---");
+        System.out.println(" ");
+        System.out.print("Type your name: ");
+
+        String namauser = processname.nextLine();
+        int spasi = namauser.indexOf(" ");
+
+        String namaDepan = namauser.substring(0, spasi);
+        String namaBelakang = namauser.substring(spasi);
+        System.out.println("Your name is: "+namaBelakang+", "+namaDepan.substring(0,1)+".");
+        System.out.println(" ");
+        System.out.println("Dear, " +namaDepan+", Welcome to the library!");
+    }
+
+}
