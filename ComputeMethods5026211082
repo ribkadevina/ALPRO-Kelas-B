@@ -1,0 +1,16 @@
+import java.util.Random;
+
+public class ComputeMethods5026211082 {
+    public double fToC(double degreesF){
+        return (5.0/9.0)*(degreesF-32);
+    }
+    public double hypotenuse(int a, int b){
+        return Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+    }
+    public int roll(){
+        Random rolldice = new Random();
+        int diceroll1 = rolldice.nextInt(6)+1;
+        int diceroll2 = rolldice.nextInt(6)+1;
+        return diceroll1+diceroll2;
+    }
+}
